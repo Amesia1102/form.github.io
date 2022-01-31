@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>会員登録フォーム</title>
+	 <style>
+.box {
+    padding: 1em 1em;
+    margin: 0em 0;
+		width: 300px;
+    font-weight: bold;
+		background-color: whitesmoke;
+    color: black;
+    border: solid 3px green;
+    border-radius: 10px;
+}
+.box p {
+    margin: 0; 
+    padding: 0;
+}
+	 </style>
+  </head>
+<body>
+	<div class="box">
+	<p>会員登録フォーム</p>
+<script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+氏名:
+<br><input type="text" name="氏名" placeholder="住所" size="5">
+<input type="text" placeholder="太郎" size="5"><br>
+性別:
+<br><label><input type="checkbox" id="man">男</label>
+    <label><input type="checkbox" id="woman">女</label>
+    <label><input type="checkbox" id="example">その他<br></label>
+メールアドレス:
+<br><input type="email" placeholder="sample@gmail.com"><br>		
+郵便番号:
+<br><input type="text" name="郵便番号" onKeyUp="AjaxZip3.zip2addr(this,'','住所','住所');"placeholder="000-0000"><br>
+住所:
+<br><input type="text" name="住所" placeholder="〇〇県〇〇市〇〇区" required="required"><br>
+電話番号:
+<br><input type="tel" name="電話番号" placeholder="000-0000-0000" required="required" size="10"><br>
+<br><form action="sousin.html"><input type="submit" value="登録"></form>
+	</div>
+	</div>
+ </dev>
+</body>
+</html>
